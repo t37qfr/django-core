@@ -3,6 +3,8 @@ secrets/
 
 db.sqlite3
 
+cloud_sql_proxy.exe
+
 # Python pycache:
 __pycache__/
 # Ignored by the build system
