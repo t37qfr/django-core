@@ -37,7 +37,11 @@ INSTALLED_APPS = [
     'blog',
     'blog2',
     'newsletter',
+    'htmlforms',
+    'accounts'
 ]
+
+AUTH_USER_MODEL = 'accounts.MyUser'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

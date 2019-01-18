@@ -1,0 +1,27 @@
+{% if as_p %}
+    AS_P
+{% elif as_text %}
+    AS_TEXT
+{% else %}
+    ELSE
+{% endif %}
+
+<br>
+
+
+<form method="POST" action=".">
+    {% csrf_token %}
+    {{form.non_field_errors}}
+    <p>
+        {% if form.title.error %}
+            {{form.title.error}}
+        {% endif %}
+        <br>
+        <label for="{{from.sender.id_for_label}}">Your Title</label><br>
+        {{form.title.label}}<br>
+        {{form.title}}
+    </p>
+    <p>{{form.slug}}</p>
+    <br>
+    <input type="submit" value="SEARCH">
+</form>

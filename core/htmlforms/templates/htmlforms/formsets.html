@@ -1,0 +1,9 @@
+<h1>Formset View</h1>
+<form action="." method="POST">{%csrf_token%}
+    {{ formset.management_form  }}
+    {% for form in formset %}
+        {{form.as_p}}
+        <hr>
+    {% endfor %}
+    <input type="submit">
+</form>
